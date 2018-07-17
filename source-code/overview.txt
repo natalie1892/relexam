@@ -1,0 +1,3 @@
+Overview:
+ program is run as follows:
+ python vm.py <path to file>
