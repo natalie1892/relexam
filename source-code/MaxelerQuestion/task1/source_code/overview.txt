@@ -1,0 +1,5 @@
+TASK 1:
+I chose to write the program in python.
+The program is run as follows:
+./vm.py <path to file>
+
