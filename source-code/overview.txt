@@ -1,3 +1,39 @@
-Overview:
- program is run as follows:
- python vm.py <path to file>
+TASK 1:
+program is run as follows:
+./vm.py <path to file>
+
+
+TASK 2:
+The solution to this problem was designed so that we have
+- a function that draws the basic shape scaled and/or flipped;
+- a function that adds padding (blank spaces); and
+- a function that returns to the beginning of the line.
+The image is created by composing these. It took me a few iterations
+of adjusting the ratios and locations to get it close to the original image.
+
+The program creates the image with 1,354 ops.
+
+To generate the image:
+$ ./make_shape.py| ./vm.py ../task2.bin > output.svg
+
+
+List of available operations:
+R - draw a horizontal line heading East
+L - draw a horizontal line heading West
+U - draw a vertical line heading South
+D - draw a vertical line heading North
+
+A - draw a diagonal line heading South-East
+B - draw a diagonal line heading North-West
+C - draw a diagonal line heading South-West
+E - draw a diagonal line heading North-East
+
+J - down scale a horizontal line, the more Js the shorter the line
+K - up scale a horizontal line, the more Ks the longer the line
+
+M - for vertical lines, down scales. for diagonal lines, changes the angle.
+N - for vertical lines, up scales. for diagonal lines, changes the angle.
+
+P - padding (as in a blank space), first P is to open the padded block,
+    second P is to close a block.
+

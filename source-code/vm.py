@@ -118,7 +118,7 @@ def execute_operation(instruction, state):
     elif instruction[OPERATION] == OP_NOT:
         if pop(state):
             push(state, 0)
-        else: 
+        else:
             push(state, 1)
     elif instruction[OPERATION] == OP_PUTC:
         c = chr(pop(state) & 0xFF)
